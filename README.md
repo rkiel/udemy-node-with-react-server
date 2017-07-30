@@ -1,9 +1,11 @@
 # udemy-node-with-react-server
 
 
-### Heroku
+### Heroku Deployment Checklist
 
-#### use PORT environment veriable
+#### Dynamic Port Binding
+
+Use PORT environment variable.
 
 ```javascript index.js
 const PORT = process.env.PORT || 5000;
@@ -11,7 +13,9 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 ```
 
-#### Add `engines` to `package.json`
+#### Specify Node Environment
+
+Add `engines` to `package.json`.
 
 ```json package.json
 "engines": {
@@ -20,14 +24,19 @@ app.listen(PORT);
 }
 ```
 
-#### Add `start`
+#### Specify `start` script
 
-```unix
+Add `start` to `scripts` in `package.json`.
+
+```bash
+sc init
 sc add start as node index.js
 ```
 
-##### Add `node_modules` to `.gitignore`
+#### Don't Include Dependencies
 
-```unix
+Add `node_modules` to `.gitignore`.
+
+```bash
 echo node_modules >> .gitignore
 ```
