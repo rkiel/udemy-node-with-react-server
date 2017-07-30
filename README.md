@@ -40,3 +40,43 @@ Add `node_modules` to `.gitignore`.
 ```bash
 echo node_modules >> .gitignore
 ```
+
+### Heroku First Time Deployment
+
+#### Create Heroku Account
+
+Sign up for [Heroku](https://www.heroku.com/) account.
+
+#### Commit Codebase To Git
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+#### Install Heroku CLI
+
+Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
+#### Create Heroku App
+
+```bash
+heroku login
+heroku create
+```
+
+#### Deploy App With Git
+
+```bash
+git remote add heroku PATH_TO_HEROKU_GIT_REPO
+git push heroku master
+```
+
+### Heroku Subsequent Deployment
+
+```bash
+git add .
+git commit -m "blah blah"
+git push heroku master
+```
