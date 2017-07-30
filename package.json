@@ -4,5 +4,20 @@
   "main": "index.js",
   "repository": "git@github.com:rkiel/udemy-node-with-react-server.git",
   "author": "rkiel <cygnus@pobox.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.5.3"
+  },
+  "scripts": {
+    "e": "eslint .",
+    "pre-commit-eslint": "eslint .",
+    "p": "prettier --single-quote --jsx-bracket-same-line --write \"!(build|node_modules)/**/*.js\" \"*.js\"",
+    "pre-commit-prettier": "prettier --single-quote --jsx-bracket-same-line --list-different \"!(build|node_modules)/**/*.js\" \"*.js\""
+  },
+"pre-commit": [
+  "pre-commit-prettier",
+  "pre-commit-eslint"
+]
 }
