@@ -14,7 +14,7 @@
     "e": "eslint .",
     "pre-commit-eslint": "eslint .",
     "p": "prettier --single-quote --jsx-bracket-same-line --write \"!(build|node_modules)/**/*.js\" \"*.js\"",
-    "pre-commit-prettier": "prettier --single-quote --jsx-bracket-same-line --list-different \"!(build|node_modules)/**/*.(js|json)js\" \"*.(js|json)\""
+    "pre-commit-prettier": "prettier --single-quote --jsx-bracket-same-line --list-different \"!(build|node_modules)/**/*.(js|json)\" \"*.(js|json)\""
   },
 
 
