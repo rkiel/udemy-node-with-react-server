@@ -1,0 +1,8 @@
+{
+  "name": "udemy-node-with-react-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rkiel/udemy-node-with-react-server.git",
+  "author": "rkiel <cygnus@pobox.com>",
+  "license": "MIT"
+}
