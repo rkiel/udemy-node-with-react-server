@@ -23,6 +23,8 @@
   },
   "pre-commit": ["pre-commit-prettier", "pre-commit-eslint"],
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0"
   }
 }

@@ -80,3 +80,12 @@ git add .
 git commit -m "blah blah"
 git push heroku master
 ```
+
+### Google OAuth
+
+#### Install passport
+
+```bash
+yarn add passport
+yarn add passport-google-oauth20
+```
